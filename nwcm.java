@@ -40,5 +40,7 @@ public class nwcm
 
         array_printer(supply_array);
         array_printer(demand_array);
+
+        int matrix[supply][demand];
     }
 }
