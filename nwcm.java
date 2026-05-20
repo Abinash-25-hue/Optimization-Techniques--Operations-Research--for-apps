@@ -42,5 +42,8 @@ public class nwcm
         array_printer(demand_array);
 
         int matrix[supply][demand];
+
+        int row_position = 0, col_position = 0;
+        int current = matrix[row_position][col_position];
     }
 }
