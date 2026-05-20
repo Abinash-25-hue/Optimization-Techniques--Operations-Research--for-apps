@@ -43,7 +43,12 @@ public class nwcm
 
         int matrix[supply][demand];
 
-        int row_position = 0, col_position = 0;
+        int row_position = 0, col_position = 0, completed = 0;
         int current = matrix[row_position][col_position];
+
+        while (completed == 0)
+        {
+            
+        }
     }
 }
