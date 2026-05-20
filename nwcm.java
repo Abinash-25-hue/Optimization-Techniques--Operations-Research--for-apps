@@ -50,12 +50,13 @@ public class nwcm
         {
             if (demand < supply)
             {
-                sum += matrix[row_position][col_position];
+                sum += demand_array[col_position] * matrix[row_position][col_position];
                 col_position++;
             }
             else
             {
-
+                sum += supply_array[row_position] * matrix[row_position][col_position];
+                row_position++;
             }
         }
     }
