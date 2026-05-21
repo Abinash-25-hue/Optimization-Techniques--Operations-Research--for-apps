@@ -1,6 +1,12 @@
 import java.util.*;
 public class nwcm
 {
+    int supply = 1, demand = 1;
+    int matrix[supply][demand], supply_array[supply], demand_array[demand];
+
+
+
+
     static void filler (int array[], int element)
     {
         //int n = array.size();
