@@ -1,8 +1,14 @@
+import com.google.gson.Gson;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import java.util.*;
 public class nwcm
 {
     int supply = 1, demand = 1;
-    int matrix[supply][demand], supply_array[supply], demand_array[demand];
+    double matrix[][];
+    double supply_array[] = new double [supply];
+    double demand_array[] = new double [demand];
 
 
 
@@ -25,10 +31,17 @@ public class nwcm
         System.out.println();
     }
 
+    double solver (double matrix[][], double s_array, double d_array)
+    {
+        
+    }
+
     public static void main (String args[])
     {
         Scanner sc = new Scanner (System.in);
 
+        /*
+        
         int supply, demand;
         System.out.print("Enter the number of supply : ");
         supply = sc.nextInt();
@@ -50,7 +63,9 @@ public class nwcm
         int matrix[supply][demand];
 
         int row_position = 0, col_position = 0, completed = 0, cost_sum = 0;
-        int current = matrix[row_position][col_position];
+        int current = matrix[row_position][col_position]; 
+        
+        
 
         while (completed == 0)
         {
@@ -65,5 +80,7 @@ public class nwcm
                 row_position++;
             }
         }
+
+        // */
     }
 }
